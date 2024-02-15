@@ -72,27 +72,29 @@
             <!-- keybord end -->
 
             <!-- life score -->
-                <div class="flex justify-between w-2/4 hidden">
+                <div class="flex justify-between w-2/4 ">
                     <button class="btn bg-[#894189] border-none text-white rounded-full">
                         Life
                         <img src="images/hard.png" alt="">
-                        <span class="text-white">1</span>
+                        <span id="cureent-life" class="text-white">5</span>
                     </button>
                     <button class="btn bg-[#360490] text-white border-none rounded-full px-4">
                         Score
-                        <img src="images/dolar.svg" alt="">
+                        <img src="images/dolar1.png" alt="">
+                        <span id="cureent-score" class="text-lg">0</span>
                       </button>
                 </div>
         </div>
     </section>
     <!-- play-ground end -->
     <!-- final Score -->
-    <section class="score flex justify-center items-center min-h-screen hidden">
+    <section id="final-score" class=" flex justify-center items-center min-h-screen hidden">
         <div class="text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+            <h4 class="text-white">Game Over !</h4>
             <h1 class="text-7xl text-white">
-                <span class="font-extrabold">Score: 14</span>
+                <span class="font-extrabold">Score: <span id="last-score">14</span></span>
             </h1>
-            <button class="btn ">Play Again</button>
+            <button onclick="play()" class="btn ">Play Again</button>
             <p class="text-white">Practice will make you Pro</p>
         </div>
     </section>
